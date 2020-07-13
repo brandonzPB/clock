@@ -1,0 +1,81 @@
+#second-hand {
+  background: red;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  width: 50%;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+/*
+
+purple: rgb(79,59,158)
+red: rgb(197,28,61)
+yellow: rgb(233,208,56)
+
+orange: rgb(239,120,38)
+green: rgb(107,179,80)
+blue: rgb(51,172,199)
+
+linear-gradient(rgb(233,208,56), 
+    rgb(239,120,38),
+    rgb(107,179,80),
+    rgb(51,172,199)),
+*/
+
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+ }
+
+.clock-outline {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid gold;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px rgb(233,208,56);
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+  /* background: rgba(79,59,158, 0.8) */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8), rgba(0,0,0,0.8)), 
+    url(https://vignette.wikia.nocookie.net/evil/images/7/7e/The_Majora_Mask.jpg/revision/latest?cb=20160404190027);
+  background-position: center;
+
+}
+
+body {
+  background-image: linear-gradient(35deg, 
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.5)),
+    url(https://i.pinimg.com/originals/91/3a/71/913a71cc186735f3f9d7782c6792e1bf.jpg);
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  margin: 0;
+  font-size: rem;
+}
+
+html {
+  font-size: 10px;
+  text-align: center;
+}
